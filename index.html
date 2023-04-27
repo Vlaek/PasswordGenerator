@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Генератор пароля</title>
+</head>
+<body>
+
+    <div class="password-generator">
+        <div class="container">
+            <div class="password">
+                <div class="password-field" id="password-field"></div>
+            </div>
+
+            <div class="parameters">
+                <div class="description">Длина пароля</div>
+                <input type="number" min="5" max="30" step="1" value="5" class="parameters__item" id="parameters__item">
+                <input type="range" min="5" max="30" step="1" value="5" class="parameters__range" id="parameters__range">
+
+                <div class="checkbox">
+                    <input type="checkbox" id="lower-case" class="checkbox__input" checked>
+                    <label for="lower-case" class="checkbox__label" title="a-z">Строчные буквы</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="upper-case" class="checkbox__input" checked>
+                    <label for="upper-case" class="checkbox__label" title="A-Z">Прописные буквы</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="number" class="checkbox__input" checked>
+                    <label for="number" class="checkbox__label" title="0123456789">Цифры</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="symbol" class="checkbox__input">
+                    <label for="symbol" class="checkbox__label" title="@#$%^&*([])">Спец. символы</label>
+                </div>
+                    
+            </div>  
+            
+            <div class="button">
+                <button class="btn" id="btn">Создать пароль</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
